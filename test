@@ -195,15 +195,9 @@ public class Enemy : MonoBehaviour
         isHurt = true;
         anim.SetTrigger("hurt");
         Vector2 dir = new Vector2(transform.position.x - attackTrans.position.x, 0).normalized;
-        // Debug.Log(dir);
         rb.velocity = new Vector2(0, rb.velocity.y);
-        // Debug.Log(rb.velocity);
-
 
         StartCoroutine(OnHurt(dir));
-        //使用力进行击退
-        // float force = currentSpeed /  2;
-        // rb.AddForce(transform.up * force, ForceMode2D.Impulse);
     }
 
     private IEnumerator OnHurt(Vector2 dir)
