@@ -9,7 +9,7 @@ using UnityEngine.Timeline;
 [RequireComponent(typeof(Rigidbody2D),typeof(Animator),typeof(physicscheck))]
 public class Enemy : MonoBehaviour
 {
-    [HideInInspector] public  Rigidbody2D rb;
+    [HideInInspector] public Rigidbody2D rb;
     [HideInInspector] public Animator anim;
     private Collider2D coll;
 
